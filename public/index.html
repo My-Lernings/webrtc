@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Real-Time Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="video_chat_loby">
+        <h2 class="text">Real-Time Chat</h2>
+        <input id="roomName" type="text" placeholder="Room Name" />
+
+        <button id="join">Join</button>
+
+        <div class="video_chat_room">
+            <video src="" id="user_video"></video>
+            <video src="" id="peer_video"></video>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+    integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+<script src="/chat.js"></script>
+
+</html>
